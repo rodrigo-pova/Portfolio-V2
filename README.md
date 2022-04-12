@@ -5,9 +5,8 @@
   rodrigo-pova.github.io - v2
 </h1>
 
-# Project Name
 [![Project Version][version-image]][version-url]
-[!![Frontend][frontend-img]]
+![Frontend][frontend-img]
 
 > This is the second iteration of my personal page.
 
