@@ -14,7 +14,8 @@
 
 ## About me
 
-**Rodrigo Pova** 
+My name is **Rodrigo Pova**
+
 * *My professional profile on* [LinkedIn][linkedin-url]
 * *Follow me on* [Twitter][twitter-url]
 
