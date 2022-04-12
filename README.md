@@ -2,7 +2,7 @@
   <img alt="Logo" src="src/images/logo.svg" width="100" />
 </div>
 <h1 align="center">
-  rodrigo-pova.github.io - v2
+  <a href="rodrigo-pova.github.io">rodrigo-pova.github.io</a> - v2
 </h1>
 
 [![Project Version][version-image]][version-url]
