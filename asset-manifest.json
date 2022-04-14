@@ -1,12 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.081bbe04.js",
+    "main.js": "/static/js/main.2d90013e.js",
     "static/js/787.8496f338.chunk.js": "/static/js/787.8496f338.chunk.js",
+    "static/media/SF-Pro-Text-Medium.otf": "/static/media/SF-Pro-Text-Medium.8c301dcfa99eaab6ddd6.otf",
+    "static/media/SF-Pro-Text-Bold.otf": "/static/media/SF-Pro-Text-Bold.a6db59b73f648f731e9e.otf",
+    "static/media/SF-Pro-Display-Black.otf": "/static/media/SF-Pro-Display-Black.fd78f9a2dcf0c47166f5.otf",
+    "static/media/MonoLisa-Light.ttf": "/static/media/MonoLisa-Light.13e2291f1c48169b92a7.ttf",
+    "static/media/MonoLisa-Regular.ttf": "/static/media/MonoLisa-Regular.8670db5fb37e0fabb51f.ttf",
+    "static/media/MonoLisa-Bold.ttf": "/static/media/MonoLisa-Bold.65163b8128e7bf0a897e.ttf",
+    "static/media/MonoLisa-Medium.ttf": "/static/media/MonoLisa-Medium.22e79573941b815fadc2.ttf",
     "index.html": "/index.html",
-    "main.081bbe04.js.map": "/static/js/main.081bbe04.js.map",
+    "main.2d90013e.js.map": "/static/js/main.2d90013e.js.map",
     "787.8496f338.chunk.js.map": "/static/js/787.8496f338.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.081bbe04.js"
+    "static/js/main.2d90013e.js"
   ]
 }
