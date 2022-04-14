@@ -29,19 +29,19 @@ const GlobalStyle = createGlobalStyle`
     font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 900;
-    src: local("SF Pro Display Black"), local("SF-Pro-Display-Black"), url("../fonts/SF-Pro-Display-Black.otf"), format("opentype");
+    src: local("SF Pro Display Black"), local("SF-Pro-Display-Black"), url("../fonts/SF-Pro-Display-Black.otf");
   }
   @font-face {
     font-family: "SF Pro Text";
     font-style: normal;
     font-weight: 500;
-    src: local("SF Pro Text Medium"), local("SF-Pro-Text-Medium"), url("../fonts/SF-Pro-Text-Medium.otf"), format("opentype");
+    src: local("SF Pro Text Medium"), local("SF-Pro-Text-Medium"), url("../fonts/SF-Pro-Text-Medium.otf");
   }
   @font-face {
     font-family: "SF Pro Text";
     font-style: normal;
     font-weight: 700;
-    src: local("SF Pro Text Bold"), local("SF-Pro-Text-Bold"), url("../fonts/SF-Pro-Text-Bold.otf"), format("opentype");
+    src: local("SF Pro Text Bold"), local("SF-Pro-Text-Bold"), url("../fonts/SF-Pro-Text-Bold.otf");
   }
 
   :root {

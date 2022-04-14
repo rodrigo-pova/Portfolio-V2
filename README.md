@@ -1,8 +1,8 @@
 <div align="center">
-  <img alt="Logo" src="src/images/logo.svg" width="100" />
+  <img alt="Logo" src="src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
-  <a href="rodrigo-pova.github.io">rodrigo-pova.github.io</a> - v2
+  <a href="https://rodrigo-pova.github.io">rodrigo-pova.github.io</a> - v2
 </h1>
 
 [![Project Version][version-image]][version-url]
