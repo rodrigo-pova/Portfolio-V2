@@ -5,7 +5,7 @@ const navLinks = [
   },
   {
     url: '/#work',
-    name: 'Selected Work'
+    name: 'Selected work'
   }
 ];
 

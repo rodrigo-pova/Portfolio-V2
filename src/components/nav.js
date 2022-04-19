@@ -6,11 +6,14 @@ import logoPng from '../images/logo.png';
 
 const StyledHeader = styled.header`
   position: fixed;
+  display: flex;
+  align-items: center;
+  height: 100px;
   top: 0;
   z-index: 11;
   padding: 0px 100px;
   width: 100%;
-  height: 100px;
+  margin: 0;
   background-color: rgba(var(--color-black-rgb), 0.85);
   backdrop-filter: blur(10px);
   transition: var(--transition);
@@ -27,18 +30,16 @@ const StyledHeader = styled.header`
       props.scrollDirection === 'up' &&
       !props.scrolledToTop &&
       css`
-        height: 70px;
         transform: translateY(0px);
-        box-shadow: 0 10px 30px -10px var(--color-black);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
       `};
 
     ${(props) =>
       props.scrollDirection === 'down' &&
       !props.scrolledToTop &&
       css`
-        height: var(70px);
-        transform: translateY(calc(var(70px) * -1));
-        box-shadow: 0 10px 30px -10px var(--color-black);
+        transform: translateY(-100px);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
       `};
   }
 `;
@@ -47,6 +48,8 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: auto;
   position: relative;
   width: 100%;
   color: var(--color-white);
@@ -62,14 +65,14 @@ const StyledNav = styled.nav`
 
     &:hover,
     &:focus {
-      transform: scale(1.05);
+      transition: var(--transition);
+      transform: scale(1.02);
     }
   }
 `;
 
 const StyledLinks = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   @media (max-width: 768px) {
@@ -78,17 +81,17 @@ const StyledLinks = styled.div`
 
   ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0;
     margin: 0 10px;
     list-style: none;
-
+    
     li {
       font-size: var(--fz-md);
       font-weight: 400;
-
+      
       a {
+        transition: var(--transition);
         padding: 16px;
       }
     }
@@ -102,15 +105,12 @@ const StyledLinks = styled.div`
     padding: 0.75rem 1rem;
     font-size: var(--fz-md);
     font-family: var(--font-mono);
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
     transition: var(--transition);
     &:hover,
     &:focus,
     &:active {
-      background-color: rgba(var(--color-black-rgb), 0.15);
-      outline: none;
+      transform: scale(1.05);
+      background-color: rgba(var(--color-accent-rgb), 0.1);
     }
   }
 `;

@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
     --color-white: #C3CCF1;
     --color-grey: #516ACF;
     --color-accent: #FFC378;
+    --color-accent-rgb: 255, 195, 120;
 
     --ff-display: "SF Pro Display", sans-serif;
     --ff-text: "SF Pro Text", sans-serif;
@@ -29,6 +30,8 @@ const GlobalStyles = createGlobalStyle`
   *,
   *::before,
   *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
   }
 
@@ -39,7 +42,6 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 500;
     color: var(--color-white);
     background-color: var(--color-black);
-    transition: var(--transition);
 
     a {
       text-decoration: none;
