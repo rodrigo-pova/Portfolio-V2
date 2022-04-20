@@ -48,7 +48,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: var(--ff-text);
     font-size: var(--fz-md);
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-grey);
     background-color: var(--color-black);
     
     @media (max-width: 480px) {
