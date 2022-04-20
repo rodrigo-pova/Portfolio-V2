@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const StyledSide = styled.div`
   width: 40px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: ${(props) => (props.orientation === 'left' ? '40px' : 'auto')};
   right: ${(props) => (props.orientation === 'left' ? 'auto' : '40px')};
@@ -17,6 +17,11 @@ const StyledSide = styled.div`
 
   @media (max-width: 768px) {
     display: none;
+  }
+
+  @media (min-width: 1400px) {
+    left: ${(props) => (props.orientation === 'left' ? 'calc(50vw - 700px)' : 'auto')};
+    right: ${(props) => (props.orientation === 'left' ? 'auto' : 'calc(50vw - 700px)')};
   }
 `;
 
