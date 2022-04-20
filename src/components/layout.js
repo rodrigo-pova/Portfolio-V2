@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+import MenuContext from '../context/menuContext';
 
-const StyledMain = styled.main`
+const StyledBody = styled.body`
   position: relative;
   height: 100vh;
   max-width: 1400px;
@@ -10,7 +11,9 @@ const StyledMain = styled.main`
 `;
 
 const Layout = ({ children }) => {
-  return <StyledMain>{children}</StyledMain>;
+  const [menuIsOpen] = useContext(MenuContext);
+
+  return <StyledBody className={menuIsOpen && 'blur'}>{children}</StyledBody>;
 };
 
 Layout.propTypes = {

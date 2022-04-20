@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
+import email from '../content/email';
 import navLinks from '../content/navLinks';
 import useScrollDirection from '../hooks/useScrollDirection';
 import logoPng from '../images/logo.png';
+import Menu from './menu';
 
 const StyledHeader = styled.header`
   position: fixed;
@@ -57,6 +59,7 @@ const StyledNav = styled.nav`
   z-index: 12;
 
   .logo {
+    filter: none !important;
     height: 80px;
     width: 80px;
     img {
@@ -91,7 +94,6 @@ const StyledLinks = styled.div`
       font-weight: 400;
       
       a {
-        transition: var(--transition);
         padding: 16px;
       }
     }
@@ -104,12 +106,11 @@ const StyledLinks = styled.div`
     border-radius: var(--border-radius);
     padding: 0.75rem 1rem;
     font-size: var(--fz-md);
-    font-family: var(--font-mono);
+    font-family: var(--ff-mono);
     transition: var(--transition);
     &:hover,
     &:focus,
     &:active {
-      transform: scale(1.05);
       background-color: rgba(var(--color-accent-rgb), 0.1);
     }
   }
@@ -139,7 +140,7 @@ const Nav = () => {
   );
 
   const contactBtn = (
-    <a className="btn-contact" href="/">
+    <a className="btn-contact" href={`mailto:${email}`}>
       Contact
     </a>
   );
@@ -164,7 +165,7 @@ const Nav = () => {
             <div>{contactBtn}</div>
           </StyledLinks>
 
-          {/* <Menu /> */}
+          <Menu />
         </>
       </StyledNav>
     </StyledHeader>

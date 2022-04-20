@@ -30,7 +30,6 @@ const StyledLinkWrapper = styled.div`
     &:hover,
     &:focus {
       transform: translateY(-3px);
-      transition: var(--transition)
     }
   }
 `;

@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --color-black: #0A143E;
     --color-black-rgb: 10, 20, 62;
+    --color-almost-black: hsl(228, 72%, 15.5%);
     --color-white: #C3CCF1;
     --color-grey: #516ACF;
     --color-accent: #FFC378;
@@ -25,6 +26,13 @@ const GlobalStyles = createGlobalStyle`
     --border-radius: 10px;
 
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    --hamburger-width: 30px;
+
+    --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+    --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+    --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    --ham-after-active: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   }
 
   *,
@@ -42,15 +50,31 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 500;
     color: var(--color-white);
     background-color: var(--color-black);
+    
+    @media (max-width: 480px) {
+      font-size: var(--fz-sm);
+    }
 
     a {
       text-decoration: none;
       color: var(--color-white);
+      transition: var(--transition);
 
       &:active,
       &:focus,
       &:hover {
         color: var(--color-accent);
+      }
+    }
+
+    .blur {
+      overflow: hidden;
+
+      & > * {
+        filter: blur(5px) brightness(0.7);
+        transition: var(--transition);
+        pointer-events: none;
+        user-select: none;
       }
     }
   }
