@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const StyledSide = styled.div`
   width: 40px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: ${(props) => (props.orientation === 'left' ? '40px' : 'auto')};
   right: ${(props) => (props.orientation === 'left' ? 'auto' : '40px')};
