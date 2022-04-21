@@ -5,9 +5,17 @@ import MenuContext from '../context/menuContext';
 
 const StyledBody = styled.body`
   position: relative;
-  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
   max-width: 1400px;
   margin: 0 auto;
+
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const Layout = ({ children }) => {

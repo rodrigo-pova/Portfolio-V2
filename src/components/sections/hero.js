@@ -35,12 +35,12 @@ const StyledHeroSection = styled.section`
   p {
     margin: 20px 0 0;
     max-width: 540px;
-    line-height: 1.3;
   }
 
   &:after {
     content: '';
     position: absolute;
+    width: 100%;
     z-index: -2;
     top: 24vh;
     right: -10vw;
@@ -78,7 +78,7 @@ const Hero = () => {
       <h2 className="big-heading">Rodrigo Pova.</h2>
       <h3 className="big-heading">Fullstack web dev.</h3>
       <p>
-      I'm a 🇧🇷-based software engineer that designs and builds accessible experiences for the web.
+      I'm a 🇧🇷-based software developer that designs and builds accessible experiences for the web.
       </p>
     </StyledHeroSection>
   );

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Email from './components/email';
 import Layout from './components/layout';
 import Nav from './components/nav';
+import About from './components/sections/about';
 import Hero from './components/sections/hero';
 import Social from './components/social';
 import MenuContext from './context/menuContext';
@@ -17,6 +18,7 @@ function App() {
         <Email />
 
         <Hero />
+        <About />
       </Layout>
     </MenuContext.Provider>
   );

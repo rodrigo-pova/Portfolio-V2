@@ -13,19 +13,19 @@ const StyledHeader = styled.header`
   height: 100px;
   top: 0;
   z-index: 11;
-  padding: 0px 100px;
+  /* padding: 0px 100px; */
   width: 100%;
   margin: 0;
   background-color: rgba(var(--color-black-rgb), 0.85);
   backdrop-filter: blur(10px);
   transition: var(--transition);
 
-  @media (max-width: 1080px) {
+  /* @media (max-width: 1080px) {
     padding: 0 40px;
   }
   @media (max-width: 768px) {
     padding: 0 25px;
-  }
+  } */
 
   @media (prefers-reduced-motion: no-preference) {
     ${(props) =>
@@ -50,10 +50,10 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1120px;
   margin: auto;
   position: relative;
-  width: 100%;
+  width: 80%;
   color: var(--color-white);
   font-family: var(--ff-mono);
   z-index: 12;

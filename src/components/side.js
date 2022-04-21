@@ -20,8 +20,8 @@ const StyledSide = styled.div`
   }
 
   @media (min-width: 1400px) {
-    left: ${(props) => (props.orientation === 'left' ? 'calc(50vw - 700px)' : 'auto')};
-    right: ${(props) => (props.orientation === 'left' ? 'auto' : 'calc(50vw - 700px)')};
+    left: ${(props) => (props.orientation === 'left' ? 'calc(50vw - 660px)' : 'auto')};
+    right: ${(props) => (props.orientation === 'left' ? 'auto' : 'calc(50vw - 660px)')};
   }
 `;
 

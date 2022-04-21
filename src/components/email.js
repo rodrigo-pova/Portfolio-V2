@@ -24,7 +24,6 @@ const StyledLinkWrapper = styled.div`
     font-family: var(--ff-mono);
     font-size: var(--fz-xxs);
     line-height: var(--fz-lg);
-    letter-spacing: 0.1em;
     writing-mode: vertical-rl;
 
     &:hover,
