@@ -81,7 +81,6 @@ const StyledPic = styled.div`
     }
 
     .img {
-      width: 300px;
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
