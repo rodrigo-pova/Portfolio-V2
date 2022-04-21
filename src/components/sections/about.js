@@ -116,7 +116,7 @@ const StyledPic = styled.div`
 `;
 
 const About = () => {
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Redux', 'Node.js', 'MySQL', 'MongoDB', 'Docker'];
+  const skills = ['JavaScript', 'TypeScript', 'React', 'Redux', 'Node.js', 'MySQL', 'MongoDB', 'Docker'];
 
   return (
     <StyledAboutSection id="about">
