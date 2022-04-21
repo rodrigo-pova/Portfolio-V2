@@ -53,7 +53,7 @@ const StyledPic = styled.div`
   max-width: 300px;
 
   @media (max-width: 768px) {
-    margin: 50px auto 0;
+    margin: 50px auto;
     width: 70%;
   }
 
