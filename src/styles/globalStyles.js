@@ -49,6 +49,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    overflow-x: hidden;
     box-sizing: border-box;
     font-family: var(--ff-text);
     font-size: var(--fz-md);
